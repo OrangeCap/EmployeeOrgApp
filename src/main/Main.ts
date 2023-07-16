@@ -1,0 +1,26 @@
+import Employee from "./Employee";
+import { EmployeeOrgApp } from "./EmployeeOrgApp";
+
+const ceo: Employee = new Employee(1, "John Smith");
+const employeeOrgApp: EmployeeOrgApp = new EmployeeOrgApp(ceo);
+employeeOrgApp.addEmployee("Margot Donald", 2, 1);
+employeeOrgApp.addEmployee("Cassandra Reynolds", 3, 2);
+employeeOrgApp.addEmployee("Mary Blue", 4, 3);
+employeeOrgApp.addEmployee("Bob Saget", 5, 3);
+employeeOrgApp.addEmployee("Tina Teff", 6, 5);
+employeeOrgApp.addEmployee("Will Turner", 7, 6);
+employeeOrgApp.addEmployee("Tyler Simpson", 8, 1);
+employeeOrgApp.addEmployee("Harry Tobs", 9, 8);
+employeeOrgApp.addEmployee("Thomas Brown", 10, 9);
+employeeOrgApp.addEmployee("George Carrey", 11, 8);
+employeeOrgApp.addEmployee("Gary Styles", 12, 8);
+employeeOrgApp.addEmployee("Ben Willis", 13, 1);
+employeeOrgApp.addEmployee("Georgina Flangy", 14, 1);
+employeeOrgApp.addEmployee("Sophie Turner", 15, 14);
+employeeOrgApp.displayOrgHierarchy();
+employeeOrgApp.move(5, 1);
+employeeOrgApp.displayOrgHierarchy();
+employeeOrgApp.undo();
+employeeOrgApp.displayOrgHierarchy();
+employeeOrgApp.redo();
+employeeOrgApp.displayOrgHierarchy();
